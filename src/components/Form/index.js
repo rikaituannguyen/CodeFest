@@ -4,15 +4,11 @@ import { Button, FormControl, TextField } from '@mui/material';
 import './index.scss';
 
 const index = (props) => {
-  const { form, setForm } = props;
+  const { form, setForm, onStart } = props;
 
   const onChange = (e) => {
     const { value, name } = e.target;
     setForm({ ...form, [name]: value });
-  };
-
-  const onStart = () => {
-    // do nothing
   };
 
   return (

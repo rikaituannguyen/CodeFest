@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import Item from './Item';
+import { range } from 'lodash';
 
 const index = (props) => {
   const {
@@ -73,13 +74,13 @@ const index = (props) => {
     });
   };
 
-  //   const renderLefts = () => {
-  //     const len = parseInt(matrixRel[0]);
+  const renderLefts = () => {
+    const len = parseInt(matrixRel[0]);
 
-  //     return range(0, len).map((_, index) => {
-  //       return <Item key={index}>{index + 1}</Item>;
-  //     });
-  //   };
+    return range(0, len).map((_, index) => {
+      return <Item key={index}>{index + 1}</Item>;
+    });
+  };
 
   return (
     <div className='container'>
