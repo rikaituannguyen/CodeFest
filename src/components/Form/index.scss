@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+
+  &-control {
+    margin-bottom: 10px !important;
+  }
+
+  .double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 98%;
+    }
+  }
+}
