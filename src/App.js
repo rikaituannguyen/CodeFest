@@ -35,7 +35,7 @@ function App() {
   const [form, setForm] = useState({
     matrix: '8-9',
     start: '1-C',
-    end: '12-B',
+    end: '8-B',
     locked: '2-D,2-B,3-D,4-D',
   });
 
