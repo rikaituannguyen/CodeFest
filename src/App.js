@@ -33,10 +33,10 @@ const chars = [
 
 function App() {
   const [form, setForm] = useState({
-    matrix: '12-9',
+    matrix: '8-9',
     start: '1-C',
     end: '12-B',
-    locked: '2-D,2-B,3-D,3-E,4-D',
+    locked: '2-D,2-B,3-D,4-D',
   });
 
   const [arrBFS, setArrBFS] = useState([]);
@@ -63,7 +63,7 @@ function App() {
     const arr = point.split('-');
     const index2 = chars.findIndex((o) => o === arr[1]);
 
-    return [parseInt(arr[width - 1]) - 1, height - index2];
+    return [parseInt(arr[0]) - 1, index2];
   };
 
   const onStart = () => {
@@ -74,7 +74,7 @@ function App() {
     const height = parseInt(matrixRel[1]);
 
     const arrClone = [];
-
+    console.log(width, height);
     for (let i = width; i > 0; i -= 1) {
       const arrTemp = [];
       for (let j = 0; j < height; j += 1) {

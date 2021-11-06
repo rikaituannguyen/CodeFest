@@ -98,8 +98,8 @@ const index = (props) => {
       <div
         className='matrix'
         style={{
-          gridTemplateColumns: `repeat(${parseInt(matrixRel[1])}, 1fr)`,
-          gridTemplateRows: `repeat(${parseInt(matrixRel[0])}, 1fr)`,
+          gridTemplateColumns: `repeat(${parseInt(matrixRel[1])}, 70px)`,
+          gridTemplateRows: `repeat(${parseInt(matrixRel[0])}, 70px)`,
         }}
       >
         {renderItems()}

@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 
   .matrix {
-    width: 100%;
     display: grid;
     padding: 10px;
   }
